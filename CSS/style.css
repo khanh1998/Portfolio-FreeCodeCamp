@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+header{
+	font-size: 30px;
+}
+
+h1 #last{
+	
+	font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+	text-align: center;
+	color: #D9171B;
+	border-top: solid #0DD4DD;
+}
+h1 #last:hover{
+	font-size: 40px;
+}
+h1 #first{
+	color: aqua;
+	font-family:helvetica;
+	border-bottom: solid red;
+}
+h1 #first:hover{
+	font-size: 40px;
+}
+
+
+
+.social-icon a {
+    line-height: 50px;
+}
