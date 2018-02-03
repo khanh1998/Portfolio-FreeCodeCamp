@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" href="JS/">
     <title>Quoc Khanh</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -16,18 +17,14 @@
 
 </head>
 
-<body>
-    <div class="container-fluid" data-spy="scroll" data-target=".navbar" data-offset="50" style="position: relative">
-        <nav class="navbar navbar-expand-md fixed-top bg-light">
+<body data-spy="scroll" data-target="#my-navbar" data-offset="50" style="position: relative; overflow-y: scroll; height: auto">
+    <div class="container-fluid">
+        <nav id="my-navbar" class="navbar navbar-expand-md fixed-top bg-light navbar-light">
 
             <!-- Logo -->
-            <a href="#" class="navbar-brand">QUOC KHANH BUI
-                    </a>
+            <div class="navbar-brand">QUOC KHANH BUI
+            </div>
 
-            <!-- Toggler/collapsibe button -->
-            <button class="navbar-toggler bg-info" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
             <!-- navigation bar text -->
             <div class="navbar-text">
@@ -35,14 +32,20 @@
             </div>
             <!-- navigation link -->
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="active nav-item"><a href="#about" class="nav-link active">About</a></li>
+                <ul class="navbar-nav nav-pills">
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </div>
+
+
+            <!-- Toggler/collapsibe button -->
+            <button class="navbar-toggler bg-info" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </nav>
-        <section class="container jumbotron " id="about">
+        <section class="container jumbotron" id="about" style="margin-top: 130px">
             <div class="row align-items-center">
                 <div class="col-xs-12 col-md-6" id="introduction">
                     <h3 class="text-center">Full Stack Developer
@@ -67,7 +70,7 @@
         <section class="container jumbotron" id="portfolio">
             <h3>#Portfolio</h3>
             <div class="row">
-                
+
                 <div class="col-12 col-sm-6 col-lg-4">
                     <figure class="figure">
                         <img src="Image/facebook.png" class="figure-img img-fluid rounded img-thumbnail" alt="Facebook">
@@ -108,40 +111,40 @@
 
         </section>
         <section class="container jumbotron" id="contact">
-          <h3>Contact</h3>
-           <div class="row">
-           <h4 class="col-6">Message</h4>
-           <h4 class="col-6">Map</h4>
-            <div class="col-12 col-sm-12 col-lg-6" id="contact-form">
-                <form>
-                   <div class="form-group">
-                       <label for="name">Name: </label>
-                       <input type="text" class="form-control" id="name">
-                   </div>
-                   <div class="form-group">
-                       <label for="address">Address: </label>
-                       <input type="text" class="form-control" id="address">
-                   </div>
-                   <div class="form-group">
-                       <label for="phone">Phone number: </label>
-                       <input type="number" class="form-control" id="phone">
-                   </div>
-                   <div class="form-group">
-                       <label for="message">Message: </label>
-                       <textarea class="form-control" id="message" cols="30" rows="10"></textarea>
-                   </div>
-                    <button type="reset" class="btn btn-default">Submit</button>
-                </form>
-            </div>
-            
-            <div class="col-12 col-sm-12 col-lg-6" id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5126376766416!2d106.7036064145285!3d10.771993692324541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f43fd97af5f%3A0x88ba5dd71b15433c!2zQml0ZXhjbyBUb3dlciwgaOG6u20gc-G7kSAyIEjDoG0gTmdoaSwgQuG6v24gTmdow6ksIFF14bqtbiAxLCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1517635313323" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
+            <h3>Contact</h3>
+            <div class="row">
+                <h4 class="col-6">Message</h4>
+                <h4 class="col-6">Map</h4>
+                <div class="col-12 col-sm-12 col-lg-6" id="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name: </label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address: </label>
+                            <input type="text" class="form-control" id="address">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone number: </label>
+                            <input type="number" class="form-control" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message: </label>
+                            <textarea class="form-control" id="message" cols="30" rows="10"></textarea>
+                        </div>
+                        <button type="reset" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+
+                <div class="col-12 col-sm-12 col-lg-6" id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5126376766416!2d106.7036064145285!3d10.771993692324541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f43fd97af5f%3A0x88ba5dd71b15433c!2zQml0ZXhjbyBUb3dlciwgaOG6u20gc-G7kSAyIEjDoG0gTmdoaSwgQuG6v24gTmdow6ksIFF14bqtbiAxLCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1517635313323" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
         <footer>
-            <div class="row align-items-center">
-                <p class="col-12 text-center">
+            <div class="row align-items-center card">
+                <p class="col-12 text-center card-block">
                     Designed by Quoc Khanh bui With <span style="color: crimson"><i class="fas fa-heart fa-2x"></i></span>
                 </p>
             </div>
