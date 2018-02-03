@@ -16,8 +16,8 @@
 
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <div class="container-fluid">
+<body>
+    <div class="container-fluid" data-spy="scroll" data-target=".navbar" data-offset="50" style="position: relative">
         <nav class="navbar navbar-expand-md fixed-top bg-light">
 
             <!-- Logo -->
@@ -65,21 +65,86 @@
             </div>
         </section>
         <section class="container jumbotron" id="portfolio">
+            <h3>#Portfolio</h3>
             <div class="row">
-                <div class="col-12 col-sm-6 col-lg-4"></div>
-                <div class="col-12 col-sm-6 col-lg-4"></div>
-                <div class="col-12 col-sm-6 col-lg-4"></div>
-                <div class="col-12 col-sm-6 col-lg-4"></div>
-                <div class="col-12 col-sm-6 col-lg-4"></div>
-                <div class="col-12 col-sm-6 col-lg-4"></div>
+                
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <figure class="figure">
+                        <img src="Image/facebook.png" class="figure-img img-fluid rounded img-thumbnail" alt="Facebook">
+                        <figcaption class="figure-caption">Facebook</figcaption>
+                    </figure>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <figure class="figure">
+                        <img src="Image/github.png" class="figure-img img-fluid rounded img-thumbnail" alt="Github">
+                        <figcaption class="figure-caption">Github</figcaption>
+                    </figure>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <figure class="figure">
+                        <img src="Image/google.png" class="figure-img img-fluid rounded img-thumbnail" alt="Google">
+                        <figcaption class="figure-caption">Google</figcaption>
+                    </figure>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <figure class="figure">
+                        <img src="Image/stack-overflow.png" class="figure-img img-fluid rounded img-thumbnail" alt="StackOverFlow">
+                        <figcaption class="figure-caption">StackOverflow</figcaption>
+                    </figure>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <figure class="figure">
+                        <img src="Image/twitter.png" class="figure-img img-fluid rounded img-thumbnail" alt="Twitter">
+                        <figcaption class="figure-caption">Twitter</figcaption>
+                    </figure>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <figure class="figure">
+                        <img src="Image/youtube.png" class="figure-img img-fluid rounded img-thumbnail" alt="Youtube">
+                        <figcaption class="figure-caption">Youtube</figcaption>
+                    </figure>
+                </div>
             </div>
-            
+
         </section>
         <section class="container jumbotron" id="contact">
-
+          <h3>Contact</h3>
+           <div class="row">
+           <h4 class="col-6">Message</h4>
+           <h4 class="col-6">Map</h4>
+            <div class="col-12 col-sm-12 col-lg-6" id="contact-form">
+                <form>
+                   <div class="form-group">
+                       <label for="name">Name: </label>
+                       <input type="text" class="form-control" id="name">
+                   </div>
+                   <div class="form-group">
+                       <label for="address">Address: </label>
+                       <input type="text" class="form-control" id="address">
+                   </div>
+                   <div class="form-group">
+                       <label for="phone">Phone number: </label>
+                       <input type="number" class="form-control" id="phone">
+                   </div>
+                   <div class="form-group">
+                       <label for="message">Message: </label>
+                       <textarea class="form-control" id="message" cols="30" rows="10"></textarea>
+                   </div>
+                    <button type="reset" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+            
+            <div class="col-12 col-sm-12 col-lg-6" id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5126376766416!2d106.7036064145285!3d10.771993692324541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f43fd97af5f%3A0x88ba5dd71b15433c!2zQml0ZXhjbyBUb3dlciwgaOG6u20gc-G7kSAyIEjDoG0gTmdoaSwgQuG6v24gTmdow6ksIFF14bqtbiAxLCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1517635313323" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            </div>
         </section>
         <footer>
-
+            <div class="row align-items-center">
+                <p class="col-12 text-center">
+                    Designed by Quoc Khanh bui With <span style="color: crimson"><i class="fas fa-heart fa-2x"></i></span>
+                </p>
+            </div>
         </footer>
     </div>
 </body>
